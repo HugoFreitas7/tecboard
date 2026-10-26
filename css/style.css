@@ -1,0 +1,123 @@
+/*Definição de fontes*/
+@font-face {
+    font-family: unbounded;
+    src: url('../font/Unbounded-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+ }
+ @font-face {
+    font-family: poppins;
+    src: url('../font/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+ }
+
+ /* Reset simples */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Início do estilo do Desktop*/
+
+body {
+   
+    background-color: #0E1014;
+    color: #FFFFFF;
+}
+header img{
+    display: block;
+    margin: 75px auto auto 360px;
+    width: 209px;
+    height: 34px;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    width: 792px;
+    height: 446px;
+}
+h1 {
+    font-size: 64px;
+    font-family:unbounded, sans-serif;
+    font-weight: bold;
+    margin: 60px auto 24px auto;
+    text-align: center;
+}
+
+span  {
+    color: #9747FF;
+}
+
+p {
+    font-size: 24px;
+    font-family: poppins, sans-serif;
+    text-align: center;
+    margin: 24px auto 0;
+    width: 720px;
+}
+a {
+    color: #FFFFFF;
+    font-family: poppins, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747FF;
+    display: block;
+    width: 340px;
+    height: 66px;
+    border-radius: 36px;
+    text-align: center;
+    line-height: 66px;
+    margin: 40px auto;
+}
+a:hover {
+    background-color: #8233E8;
+}
+
+@media (max-width: 768px) {
+    header img {
+        margin: 65px 0 0 60px;
+    }
+    section img {
+        width: 659px;
+        height: 446px;
+    }
+    h1 {
+        width: 648px;
+    }
+    p {
+        width: 648px;
+    }
+    a {
+        width: 340px;
+        height: 66px;
+    }
+}
+
+@media (max-width: 375px) {
+    header img {
+        margin: 32px 0 0 16px;
+    }
+    section img {
+        width: 341px;
+        height: 230px;
+    }
+    h1 {
+        width: 341px;
+        font-size: 40px;
+    }
+    p {
+        width: 341px;
+        height: 120px;
+        font-size: 20px;
+    }
+    a {
+        width: 251px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 66px;
+    }
+}
