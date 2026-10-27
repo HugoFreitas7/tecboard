@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon"  href="Favicon-tecboar-roxo.svg" type="image/sgv+xml">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js" defer></script>
     <title>Tecboard</title>
 </head>
 <body>
     <header>
-        <img src="img/Logo-tecboar-branco.png" alt="Logo tecboard na cor branca">
+        <img 
+            id="logo"
+            src="img/Logo-tecboar-branco.png" 
+            data-logo-dark="img/Logo-tecboar-branco.png"
+            data-logo-light="img/Logo-tecboar-escuro.png"
+            alt="Logo tecboard">
+
+        <button 
+            id="toggle-theme" 
+            type="button" 
+            aria-label="Ativar tema claro"
+            aria-pressed="false"
+            data-icon-light="img/tema-light.png"
+            data-icon-dark="img/tema-dark.png"  
+         >
+            <img
+                id="theme-icon"
+                src="img/tema-Light.png" 
+                alt="">
+        </button>
     </header>
     <main>
         <section>
